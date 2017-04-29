@@ -7,6 +7,8 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    /*background-color: #dde9ed;*/
+   
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +23,76 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/*Item Styles for Index views*/
+
+.Item-Row {
+    /*background-color:#dde9ed;*/
+}
+
+.Item-Frame {
+    background-color: #ffffff;
+    float: left;
+    width: 280px;
+    height: 470px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: block;
+    margin: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom:0px;
+}
+
+.Item-Wrapper {
+    margin: 0px 0px 0px 0px;
+}
+
+.Item-Name {
+    background-color: #ff6a00;
+    width: 280px;
+    height: 60px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding: 0px 0px 4px 8px;
+}
+.Item-Name h3{
+    font-size:1.2em;
+    color:#ffffff;
+}
+.Item-Photo {
+    width: 180px;
+    height:240px;
+    margin: auto;
+   
+}
+
+.Item-Details {
+    padding: 20px 0px 0px 10px;
+    width: 280px;
+    display: inline-block;
+    background-color:#a5acb7
+}
+
+
+.Details-Title {
+    /*background-color: #00ff90;*/
+    font-weight: bold;
+    
+    
+}
+
+.Details-Edit {
+    background-color: #ff6a00;
+    padding: 10px 0px 4px 8px;
+    width:280px;
+    height:40px;
+    display:inline-block;
+    position:relative;
+    margin:0px;
+     
+    
 }
