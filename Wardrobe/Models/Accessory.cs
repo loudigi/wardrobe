@@ -28,8 +28,8 @@ namespace Wardrobe.Models
         public Nullable<int> SeasonID { get; set; }
         public Nullable<int> OccasionID { get; set; }
     
-        public virtual Occasion Occasion { get; set; }
         public virtual Season Season { get; set; }
+        public virtual Occasion Occasion { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Outfit> Outfits { get; set; }
     }

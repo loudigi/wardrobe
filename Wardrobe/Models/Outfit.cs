@@ -16,17 +16,15 @@ namespace Wardrobe.Models
     {
         public int OutfitID { get; set; }
         public string Name { get; set; }
-        public Nullable<int> TopID { get; set; }
+        public Nullable<int> TopdID { get; set; }
         public Nullable<int> BottomID { get; set; }
         public Nullable<int> ShoesID { get; set; }
         public Nullable<int> AccessoryID { get; set; }
-        public Nullable<int> OccasionID { get; set; }
         public string Description { get; set; }
     
         public virtual Accessory Accessory { get; set; }
         public virtual Bottom Bottom { get; set; }
-        public virtual Occasion Occasion { get; set; }
-        public virtual Shoe Sho { get; set; }
+        public virtual Shoe Shoe { get; set; }
         public virtual Top Top { get; set; }
     }
 }

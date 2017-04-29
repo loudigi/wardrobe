@@ -19,7 +19,6 @@ namespace Wardrobe.Models
         {
             this.Accessories = new HashSet<Accessory>();
             this.Bottoms = new HashSet<Bottom>();
-            this.Outfits = new HashSet<Outfit>();
             this.Shoes = new HashSet<Shoe>();
             this.Tops = new HashSet<Top>();
         }
@@ -31,8 +30,6 @@ namespace Wardrobe.Models
         public virtual ICollection<Accessory> Accessories { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bottom> Bottoms { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Outfit> Outfits { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Shoe> Shoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

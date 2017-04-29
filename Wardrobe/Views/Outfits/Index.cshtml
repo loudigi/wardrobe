@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Wardrobe.Models.Outfit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Accessory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bottom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Shoe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Top)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Accessory.Name)
+            <img height="240" src="@Html.DisplayFor(modelItem => item.Accessory.Photo)" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bottom.Name)
+            <img height="240" src="@Html.DisplayFor(modelItem => item.Bottom.Photo)" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Shoe.Name)
+            <img height="240" src="@Html.DisplayFor(modelItem => item.Shoe.Photo)" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Top.Name)
+            <img height="240" src="@Html.DisplayFor(modelItem => item.Top.Photo)" />
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
+        </td>
+    </tr>
+}
+
+</table>
