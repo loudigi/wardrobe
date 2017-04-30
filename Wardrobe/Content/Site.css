@@ -25,6 +25,18 @@ textarea {
     max-width: 280px;
 }
 
+/*Carousel Styles*/
+.carousel-inner .item{
+    height:480px;
+    background-position:bottom;
+    background-size:cover;  
+}
+
+
+
+.clearSpace{
+    margin:0px;
+}
 /*Item Styles for Index views*/
 
 .Item-Row {

@@ -90,4 +90,4 @@ c:\Users\Loudigi\Documents\Visual Studio 2015\Projects\wardrobe\Wardrobe\bin\Sys
 c:\Users\Loudigi\Documents\Visual Studio 2015\Projects\wardrobe\Wardrobe\bin\System.Web.WebPages.Razor.xml
 c:\Users\Loudigi\Documents\Visual Studio 2015\Projects\wardrobe\Wardrobe\obj\Debug\Wardrobe.dll
 c:\Users\Loudigi\Documents\Visual Studio 2015\Projects\wardrobe\Wardrobe\obj\Debug\Wardrobe.pdb
-c:\Users\Loudigi\Documents\Visual Studio 2015\Projects\wardrobe\Wardrobe\obj\Debug\Wardrobe.csprojResolveAssemblyReference.cache
+C:\Users\Loudigi\Documents\Visual Studio 2015\Projects\wardrobe\Wardrobe\obj\Debug\Wardrobe.csprojResolveAssemblyReference.cache

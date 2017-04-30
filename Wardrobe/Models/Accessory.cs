@@ -11,6 +11,7 @@ namespace Wardrobe.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Accessory
     {
@@ -22,6 +23,7 @@ namespace Wardrobe.Models
     
         public int AccessoryID { get; set; }
         public string Name { get; set; }
+        [Display(Name ="Image Path")]
         public string Photo { get; set; }
         public string Type { get; set; }
         public string Color { get; set; }
