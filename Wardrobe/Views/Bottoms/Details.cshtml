@@ -7,23 +7,18 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Bottom</h4>
+    <h4>@Html.DisplayFor(model => model.Name) Bottom</h4>
     <hr />
     <dl class="dl-horizontal">
+
+        
+        <dd><img class="img-responsive" src="@Html.DisplayFor(model => model.Photo)" /> </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            Image Path
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
+             @Html.DisplayFor(model => model.Photo)
         </dd>
 
         <dt>
@@ -43,7 +38,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Occasion.Name)
+            @Html.DisplayNameFor(model => model.Occasion)
         </dt>
 
         <dd>
@@ -51,7 +46,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Season.Name)
+            @Html.DisplayNameFor(model => model.Season)
         </dt>
 
         <dd>

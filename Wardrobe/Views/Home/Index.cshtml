@@ -7,8 +7,11 @@
 <!-- Header Carousel -->
 
 
- 
-    <div class="row">
+
+<div class="row">
+    <div class="greeting">
+        <h1>How fly do you want to look today?</h1>
+    </div>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
@@ -17,6 +20,8 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -24,33 +29,38 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active" style="background-image:url(/Content/Images/sliders/slider11.jpg)">
                 <div class="carousel-caption">
-                    <h3>Sandbox Easton</h3>
-                    <p>This secret beach will keep you coming back for the fresh breez</p>
                 </div>
             </div>
 
             <div class="item" style="background-image:url(/Content/Images/sliders/slider3.jpg)">
                 <div class="carousel-caption">
-                    <h3>Central Sack Hotel</h3>
-                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
                 </div>
 
             </div>
 
-            <div class="item" style="background-image:url(/Content/Images/sliders/slider12.jpg)">
+            <div class="item" style="background-image:url(/Content/Images/sliders/slider12.jpg);background-position:top">
                 <div class="carousel-caption">
-                    <h3>Asukusa Din</h3>
-                    <p>Enjoy some local delicacy at this unique establishment</p>
                 </div>
             </div>
 
-            <div class="item" style="background-image:url(/Content/Images/sliders/slider2.jpg)">
+            <div class="item" style="background-image:url(/Content/Images/sliders/slider2.jpg);background-position:center">
 
                 <div class="carousel-caption">
-                    <h3>Robot Cabaret</h3>
-                    <p>Nothing like the Tokyo nightlife adventure!</p>
                 </div>
             </div>
+
+            <div class="item" style="background-image:url(/Content/Images/sliders/slider6.jpg);background-position:center">
+
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item" style="background-image:url(/Content/Images/sliders/slider14.jpg);background-position:top">
+
+                <div class="carousel-caption">
+                </div>
+            </div>
+
         </div>
 
         <!-- Left and right controls -->
@@ -65,31 +75,43 @@
     </div>
 </div>
 
+<!-- Call to Action Section -->
+<div class="row CalltoAction" style="background-image:url('/Content/Images/sliders/symphony.png')">
+    <div class="col-md-4 clearCol">
+        <a class="btn btn-lg btn-default btn-block" href="/Outfits/">View Saved Outfits</a>
+    </div> <div class="col-md-8 actionTextBlock">
+        <h4>
+            See all your past outfits from every season and occasion.
+            Feeling creative? Take time to browse your wardrobe and save new outfits.
+        </h4>
+    </div>
 
+</div>
 
 <div class="row">
-    <div class="col-md-3">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-3">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-3">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-3">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
+    <a href="~/Tops/">
+        <div class="HomeFeature col-md-3" style="background-image:url('/Content/Images/sliders/slider4.jpg')">
+            <h1>Tops</h1>
+        </div>
+    </a>
+    <a href="~/Bottoms/">
+        <div class="HomeFeature col-md-3" style="background-image:url('/Content/Images/sliders/slider10.jpg')">
+            <h1>Bottoms</h1>
+        </div>
+    </a>
+    <a href="/Shoes/">
+        <div class="HomeFeature col-md-3" style="background-image:url('/Content/Images/sliders/slider9.jpg')">
+            <h1>Shoes</h1>
+        </div>
+    </a>
+    <a href="/Accessories/">
+        <div class="HomeFeature col-md-3" style="background-image:url('/Content/Images/sliders/slider8.jpg')">
+            <h1>Accessories</h1>
+        </div>
+    </a>
 </div>
+
+
+
+
+

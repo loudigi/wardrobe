@@ -1,5 +1,6 @@
 ﻿@model Wardrobe.Models.Outfit
 
+
 @{
     ViewBag.Title = "Edit";
 }
@@ -26,34 +27,39 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.TopdID, "TopdID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.TopdID, "Top", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("TopdID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.TopdID, "", new { @class = "text-danger" })
+                <img height="200" src="@Html.DisplayFor(model => model.Top.Photo)" />
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.BottomID, "BottomID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.BottomID, "Bottom", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("BottomID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.BottomID, "", new { @class = "text-danger" })
+                <img height="200" src="@Html.DisplayFor(model => model.Bottom.Photo)" />
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ShoesID, "ShoesID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ShoesID, "Shoes", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("ShoesID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ShoesID, "", new { @class = "text-danger" })
+                <img height="200" src="@Html.DisplayFor(model => model.Shoe.Photo)" />
             </div>
+            
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.AccessoryID, "AccessoryID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.AccessoryID, "Accessory", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("AccessoryID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.AccessoryID, "", new { @class = "text-danger" })
+                <img height="200" src="@Html.DisplayFor(model => model.Accessory.Photo)" />
             </div>
         </div>
 

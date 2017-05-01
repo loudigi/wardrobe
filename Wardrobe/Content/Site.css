@@ -1,4 +1,6 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css?family=Anton|Vampiro+One');
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -8,7 +10,6 @@
     padding-left: 15px;
     padding-right: 15px;
     /*background-color: #dde9ed;*/
-   
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -26,16 +27,16 @@ textarea {
 }
 
 /*Carousel Styles*/
-.carousel-inner .item{
-    height:480px;
-    background-position:bottom;
-    background-size:cover;  
+.carousel-inner .item {
+    height: 480px;
+    background-position: bottom;
+    background-size: cover;
 }
 
 
 
-.clearSpace{
-    margin:0px;
+.clearSpace {
+    margin: 0px;
 }
 /*Item Styles for Index views*/
 
@@ -49,13 +50,13 @@ textarea {
     width: 280px;
     height: 470px;
     border-radius: 2px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 4px 0 rgba(0,0,0,0.2);
     display: block;
     margin: 10px;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
-    padding-bottom:0px;
+    padding-bottom: 0px;
 }
 
 .Item-Wrapper {
@@ -63,7 +64,7 @@ textarea {
 }
 
 .Item-Name {
-    background-color: #ff6a00;
+    background-color: #222222;
     width: 280px;
     height: 60px;
     text-transform: uppercase;
@@ -71,40 +72,130 @@ textarea {
     display: inline-block;
     padding: 0px 0px 4px 8px;
 }
-.Item-Name h3{
-    font-size:1.2em;
-    color:#ffffff;
-}
+
+    .Item-Name h3 {
+        font-size: 1.2em;
+        color: #ffffff;
+    }
+
 .Item-Photo {
     width: 180px;
-    height:240px;
+    height: 240px;
     margin: auto;
-   
 }
 
 .Item-Details {
     padding: 20px 0px 0px 10px;
     width: 280px;
     display: inline-block;
-    background-color:#a5acb7
+    background-color: #a5acb7;
 }
 
 
 .Details-Title {
     /*background-color: #00ff90;*/
     font-weight: bold;
-    
-    
 }
 
 .Details-Edit {
-    background-color: #ff6a00;
+    background-color: #f5f5f5;
     padding: 10px 0px 4px 8px;
-    width:280px;
-    height:40px;
-    display:inline-block;
-    position:relative;
-    margin:0px;
-     
-    
+    width: 280px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+}
+
+/*HomePage styles*/
+.HomeFeature {
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+}
+
+    .HomeFeature h1 {
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #000000;
+        margin: 0px;
+        padding-top: 20px;
+    }
+
+    .HomeFeature a, a:hover {
+        text-decoration: none;
+    }
+
+.CalltoAction {
+}
+
+.actionTextBlock {
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+
+.clearCol {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.greeting {
+    position: absolute;
+    top: 40%;
+    background-color: rgba(0,0,0,0);
+    width: 320px;
+    z-index: 5;
+    margin-left: 40px;
+    color: #ffffff;
+}
+
+    .greeting h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 3.2em;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+/*Outfits Index styles*/
+.OutfitItem {
+    display: inline-block;
+    margin: auto;
+}
+
+    .OutfitItem img {
+        height: 320px;
+    }
+
+.panel {
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.panel-body {
+    margin: auto;
+    display: block;
+    padding-left: 40px;
+}
+
+.OutfitDetails {
+    float: left;
+    margin: auto;
+    height: 130px;
+    padding-left: 40px;
+}
+
+.panel-default > .panel-heading {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.panel-default h4 {
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-family: 'Vampiro One', cursive;
+    font-size: 2.3em;
 }

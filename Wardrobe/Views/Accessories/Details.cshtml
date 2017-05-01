@@ -7,19 +7,14 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Accessory</h4>
+    <h4>@Html.DisplayFor(model => model.Name) Accessory</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
 
+        <dd><img class="img-responsive" src="@Html.DisplayFor(model => model.Photo)" /> </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Photo)
+            Image Path
         </dt>
 
         <dd>

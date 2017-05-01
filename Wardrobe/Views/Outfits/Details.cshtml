@@ -7,16 +7,10 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Outfit</h4>
+    <h4> @Html.DisplayFor(model => model.Name) Outfit</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+ 
 
         <dt>
             @Html.DisplayNameFor(model => model.Description)
@@ -27,35 +21,39 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Accessory.Name)
+            @Html.DisplayNameFor(model => model.Accessory)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Accessory.Name)
+            <img height="200" src="@Html.DisplayFor(model => model.Accessory.Photo)" />
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Bottom.Name)
+            @Html.DisplayNameFor(model => model.Bottom)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Bottom.Name)
+            <img height="200" src="@Html.DisplayFor(model => model.Bottom.Photo)" />
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Shoe.Name)
+            @Html.DisplayNameFor(model => model.Shoe)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Shoe.Name)
+            <img height="200" src="@Html.DisplayFor(model => model.Shoe.Photo)" />
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Top.Name)
+            @Html.DisplayNameFor(model => model.Top)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Top.Name)
+            <img height="200" src="@Html.DisplayFor(model => model.Top.Photo)" />
         </dd>
 
     </dl>
